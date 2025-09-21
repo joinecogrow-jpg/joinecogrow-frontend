@@ -1,12 +1,16 @@
 {
   "name": "joinecogrow-frontend",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "dev": "node server.js",
-    "build": "echo Build complete",
-    "start": "node server.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "next": "13.5.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   }
 }
