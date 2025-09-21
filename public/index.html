@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoinEcoGrow - Global Eco-Growing Platform</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .container {
+            max-width: 1200px;
+            padding: 40px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+        .feature:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .feature h3 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .feature p {
+            font-size: 1.2rem;
+        }
+        .status {
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(16, 185, 129, 0.2);
+            border-radius: 10px;
+            border: 2px solid #10b981;
+        }
+        .api-link {
+            color: #10b981;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>?? JoinEcoGrow</h1>
+        <p class="tagline">Your Global Eco-Growing Platform with 750+ Features</p>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>88</h3>
+                <p>DIY Eco-Growing Features</p>
+            </div>
+            <div class="feature">
+                <h3>91</h3>
+                <p>Tree Planting Features</p>
+            </div>
+            <div class="feature">
+                <h3>63</h3>
+                <p>Entertainment Features</p>
+            </div>
+            <div class="feature">
+                <h3>55</h3>
+                <p>Gaming Features</p>
+            </div>
+            <div class="feature">
+                <h3>68</h3>
+                <p>AI Services</p>
+            </div>
+            <div class="feature">
+                <h3>87</h3>
+                <p>Community Features</p>
+            </div>
+        </div>
+        
+        <div class="status">
+            <h2>? Platform Status</h2>
+            <p>Backend API: <a href="https://joinecogrow-backend-pfybw.ondigitalocean.app" class="api-link">LIVE</a></p>
+            <p>Frontend: Deploying...</p>
+        </div>
+    </div>
+</body>
+</html>
