@@ -1,80 +1,34 @@
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 8080;
+const port = process.env.PORT || 8080;
 
 app.get("/", (req, res) => {
   res.send(`
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>JoinEcoGrow - Global Eco-Growing Platform</title>
-      <style>
-        body { font-family: Arial, sans-serif; background: #f0fdf4; margin: 0; padding: 0; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 40px; text-align: center; }
-        h1 { color: #10b981; font-size: 3rem; margin-bottom: 20px; }
-        .logo { width: 200px; margin: 20px auto; }
-        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
-        .feature { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        .number { font-size: 2rem; font-weight: bold; color: #10b981; }
-        .label { font-size: 1rem; color: #6b7280; }
-        .status { margin-top: 40px; background: #10b981; color: white; padding: 20px; border-radius: 10px; }
-        a { color: #3b82f6; text-decoration: none; font-weight: bold; }
-      </style>
-    </head>
-    <body>
-      <div class="container">
-        <img class="logo" src="https://your-logo-url.png" alt="JoinEcoGrow Logo">
+    <html>
+      <head>
+        <title>JoinEcoGrow</title>
+        <style>
+          body { font-family: Arial; background: #f0fdf4; text-align: center; padding: 20px; }
+          h1 { color: #10b981; }
+          .feature { background: #e6ffed; margin: 10px; padding: 10px; border-radius: 10px; }
+          img { max-width: 200px; }
+        </style>
+      </head>
+      <body>
+        <img src="https://your-logo-url.png" alt="JoinEcoGrow Logo">
         <h1>?? JoinEcoGrow Platform</h1>
-        <p>Your complete DIY eco-growing system with global access!</p>
-        
-        <div class="features">
-          <div class="feature">
-            <div class="number">750+</div>
-            <div class="label">Total Features</div>
-          </div>
-          <div class="feature">
-            <div class="number">88</div>
-            <div class="label">DIY Eco-Growing</div>
-          </div>
-          <div class="feature">
-            <div class="number">91</div>
-            <div class="label">Tree Planting</div>
-          </div>
-          <div class="feature">
-            <div class="number">63</div>
-            <div class="label">Entertainment</div>
-          </div>
-          <div class="feature">
-            <div class="number">55</div>
-            <div class="label">Gaming</div>
-          </div>
-          <div class="feature">
-            <div class="number">68</div>
-            <div class="label">AI Services</div>
-          </div>
-          <div class="feature">
-            <div class="number">195+</div>
-            <div class="label">Countries Supported</div>
-          </div>
-          <div class="feature">
-            <div class="number">50+</div>
-            <div class="label">Languages</div>
-          </div>
-        </div>
-        
-        <div class="status">
-          <h2>Status</h2>
-          <p>Backend: <a href="https://joinecogrow-backend-pfybw.ondigitalocean.app">LIVE</a></p>
-          <p>Frontend: Deploying - Powered by Greenix NGO for sustainable growing!</p>
-        </div>
-      </div>
-    </body>
+        <p>Welcome to your global eco-growing platform!</p>
+        <h2>Key Features (750+ Total)</h2>
+        <div class="feature"><strong>DIY Eco-Growing:</strong> 88 features (hydroponics, composters)</div>
+        <div class="feature"><strong>Tree Planting:</strong> 91 features (QR tracking, NFTs)</div>
+        <div class="feature"><strong>Entertainment:</strong> 63 features (videos, streaming)</div>
+        <div class="feature"><strong>Gaming:</strong> 55 features (battle royale, challenges)</div>
+        <div class="feature"><strong>AI Services:</strong> 68 features (digital twins, predictions)</div>
+        <div class="feature"><strong>Community:</strong> 87 features (forums, mentorship)</div>
+        <p>Backend Status: <a href="https://joinecogrow-backend-pfybw.ondigitalocean.app">Live</a></p>
+      </body>
     </html>
   `);
 });
 
-app.listen(PORT, () => {
-  console.log("Server running on port " + PORT);
-});
+app.listen(port, () => console.log(`Frontend running on port ${port}`));
