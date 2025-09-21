@@ -1,103 +1,48 @@
-const express = require("express");
+const express = require('express');
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
-app.get("/", (req, res) => {
+app.get('/', (req, res) => {
   res.send(`
     <!DOCTYPE html>
     <html>
     <head>
       <title>JoinEcoGrow Platform</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
       <style>
-        body {
-          font-family: system-ui;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-          min-height: 100vh;
-          margin: 0;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        .container {
-          background: white;
-          border-radius: 20px;
-          padding: 40px;
-          box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-          text-align: center;
-          max-width: 600px;
-        }
-        h1 {
-          color: #10b981;
-          font-size: 48px;
-          margin-bottom: 20px;
-        }
-        .features {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 20px;
-          margin-top: 30px;
-        }
-        .feature {
-          background: #f3f4f6;
-          padding: 15px;
-          border-radius: 10px;
-        }
-        .number {
-          font-size: 28px;
-          font-weight: bold;
-          color: #10b981;
-        }
-        .label {
-          font-size: 14px;
-          color: #6b7280;
-        }
-        .status {
-          background: #10b981;
-          color: white;
-          padding: 10px 20px;
-          border-radius: 20px;
-          display: inline-block;
-          margin-top: 20px;
-        }
-        .api-link {
-          color: #3b82f6;
-          text-decoration: none;
-          margin-top: 20px;
-          display: inline-block;
-        }
+        body { font-family: Arial; padding: 50px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
+        .container { max-width: 800px; margin: 0 auto; text-align: center; }
+        h1 { font-size: 48px; }
+        .features { background: white; color: black; padding: 30px; border-radius: 20px; margin-top: 30px; }
+        .stat { display: inline-block; margin: 20px; }
+        .number { font-size: 36px; font-weight: bold; color: #10b981; }
       </style>
     </head>
     <body>
       <div class="container">
-        <h1>?? JoinEcoGrow</h1>
+        <h1>?? JoinEcoGrow Platform</h1>
         <p>Your Global Eco-Growing Platform</p>
-        
         <div class="features">
-          <div class="feature">
+          <h2>Platform Features</h2>
+          <div class="stat">
             <div class="number">750+</div>
-            <div class="label">Total Features</div>
+            <div>Total Features</div>
           </div>
-          <div class="feature">
+          <div class="stat">
             <div class="number">88</div>
-            <div class="label">DIY Features</div>
+            <div>DIY Features</div>
           </div>
-          <div class="feature">
+          <div class="stat">
             <div class="number">91</div>
-            <div class="label">Tree Features</div>
+            <div>Tree Features</div>
           </div>
-          <div class="feature">
+          <div class="stat">
             <div class="number">195+</div>
-            <div class="label">Countries</div>
+            <div>Countries</div>
           </div>
         </div>
-        
-        <div class="status">? Platform Active</div>
-        
-        <br>
-        <a href="https://joinecogrow-backend-pfybw.ondigitalocean.app" class="api-link">
-          Backend API Status ?
-        </a>
+        <p style="margin-top: 30px;">
+          <a href="https://joinecogrow-backend-pfybw.ondigitalocean.app" style="color: white;">Backend API Status</a>
+        </p>
       </div>
     </body>
     </html>
@@ -105,5 +50,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(\`JoinEcoGrow Frontend running on port \${PORT}\`);
+  console.log(\`Server running on port \${PORT}\`);
 });
