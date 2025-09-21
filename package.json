@@ -1,12 +1,12 @@
 ﻿{
   "name": "joinecogrow-frontend",
   "version": "1.0.0",
-  "description": "JoinEcoGrow Frontend - Global Eco-Growing Platform",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "14.0.4",
