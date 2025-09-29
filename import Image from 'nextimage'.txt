@@ -1,0 +1,53 @@
+import Image from 'next/image'
+
+export default function Home() {
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-center p-24 bg-gradient-to-b from-green-50 to-green-100">
+      <div className="text-center">
+        {/* Logo */}
+        <div className="mb-8">
+          <Image 
+            src="/logo.png" 
+            alt="JoinEcoGrow Logo" 
+            width={200} 
+            height={200}
+            className="mx-auto"
+          />
+        </div>
+        
+        {/* Welcome Text */}
+        <h1 className="text-4xl font-bold mb-4" style={{ color: '#388E3C' }}>
+          Welcome to JoinEcoGrow! 🌱
+        </h1>
+        
+        <p className="text-xl mb-8" style={{ color: '#689F38' }}>
+          Your sustainable living platform is ready for development!
+        </p>
+        
+        {/* Stats */}
+        <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="text-3xl font-bold" style={{ color: '#7CB342' }}>925+</div>
+            <div className="text-gray-600">Features Ready</div>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="text-3xl font-bold" style={{ color: '#7CB342' }}>57</div>
+            <div className="text-gray-600">Languages</div>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="text-3xl font-bold" style={{ color: '#7CB342' }}>8</div>
+            <div className="text-gray-600">Game Modules</div>
+          </div>
+        </div>
+        
+        {/* CTA Button */}
+        <button 
+          className="mt-8 px-8 py-4 text-white font-bold rounded-full text-lg shadow-lg hover:scale-105 transition-transform"
+          style={{ backgroundColor: '#7CB342' }}
+        >
+          Start Your Eco Journey 🌍
+        </button>
+      </div>
+    </main>
+  )
+}
