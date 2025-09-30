@@ -1,15 +1,13 @@
-﻿import Link from 'next/link'
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-export default function Home() {
-  return (
-    <div className="p-8">
-      <h1 className="text-3xl font-bold text-hand">JoinEcoGrow</h1>
-      <nav className="mt-4 space-x-4">
-        <Link href="/features/trees" className="text-leaf hover:text-ringg">Trees</Link>
-        <Link href="/features/diy" className="text-leaf hover:text-ringg">DIY</Link>
-        <Link href="/features/community" className="text-leaf hover:text-ringg">Community</Link>
-      </nav>
-      <p className="mt-4 text-textg">Welcome to JoinEcoGrow! Colors from your logo: hand (#388E3C), leaf (#7CB342).</p>
-    </div>
-  )
+:root{
+  --hand:#388E3C;
+  --leaf:#7CB342;
+  --ringg:#9CCC65;
+  --textg:#689F38;
+  --water:#29B6F6;
+  --earth:#6D4C41;
 }
+.brand-gradient{ background: linear-gradient(135deg, var(--leaf), var(--hand)); }

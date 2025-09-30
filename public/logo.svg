@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="JoinEcoGrow">
+  <defs>
+    <linearGradient id="leafGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7CB342"/>
+      <stop offset="100%" stop-color="#388E3C"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="256" r="225" fill="none" stroke="#9CCC65" stroke-width="18"/>
+  <path d="M215 345c-38-46-35-112 13-162 21-23 50-37 83-41-10 24-6 47 9 64 11 12 24 18 39 20-24 26-55 44-86 53-20 6-39 13-58 23z" fill="#2F7A35"/>
+  <path d="M330 170c22-28 53-36 83-19-12 30-40 48-76 45" fill="#7CB342"/>
+  <path d="M280 210c18-24 43-32 67-18-10 25-31 40-60 39" fill="#7CB342"/>
+  <circle cx="248" cy="308" r="54" fill="#2E7D32"/>
+  <path d="M210 358c70 14 139-26 166-90-8 100-122 145-192 100 8 4 16 7 26 8z" fill="url(#leafGrad)"/>
+  <path d="M382 360c14-18 22-15 30 0 7 14-1 30-15 34-20 5-35-16-15-34z" fill="#29B6F6"/>
+</svg>
