@@ -1,11 +1,11 @@
-﻿export default function DiyPage() {
+﻿export default function DIY(){
   return (
-    <main className="min-h-screen p-8 bg-gradient-to-b from-blue-50 to-blue-100">
-      <h1 className="text-4xl font-bold text-blue-800 mb-8">
+    <main className="p-8">
+      <h1 className="text-3xl font-bold mb-4" style={{color:"var(--hand)"}}>
         🌱 DIY Eco-Growing
       </h1>
-      <p className="text-lg text-blue-600">
-        Learn sustainable growing techniques and build your own eco-systems.
+      <p className="text-lg text-gray-700">
+        Learn to grow your own food and create sustainable systems.
       </p>
     </main>
   )
