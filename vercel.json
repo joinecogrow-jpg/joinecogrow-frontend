@@ -1,0 +1,10 @@
+﻿{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "www.joinecogrow.com" }],
+      "destination": "https://joinecogrow.com/$1",
+      "permanent": true
+    }
+  ]
+}
