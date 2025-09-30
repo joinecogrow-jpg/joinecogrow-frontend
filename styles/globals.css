@@ -1,0 +1,44 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* JoinEcoGrow Custom Styles */
+:root {
+  --leaf: #7CB342;
+  --hand: #388E3C;
+  --textg: #689F38;
+  --water: #29B6F6;
+  --ringg: #9CCC65;
+  --earth: #6D4C41;
+}
+
+.brand-gradient {
+  background: linear-gradient(135deg, #7CB342 0%, #388E3C 100%);
+}
+
+.leaf-shadow {
+  box-shadow: 0 4px 20px rgba(124, 179, 66, 0.3);
+}
+
+.hand-bg {
+  background-color: #388E3C;
+}
+
+.water-accent {
+  color: #29B6F6;
+}
+
+.ring-border {
+  border: 2px solid #9CCC65;
+}
+
+/* Animations */
+@keyframes grow {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}

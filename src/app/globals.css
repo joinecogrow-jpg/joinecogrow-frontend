@@ -1,0 +1,12 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* optional brand helpers */
+:root {
+  --leaf: #7CB342;
+  --hand: #388E3C;
+  --textg: #689F38;
+  --water: #29B6F6;
+  --ringg: #9CCC65;
+}
