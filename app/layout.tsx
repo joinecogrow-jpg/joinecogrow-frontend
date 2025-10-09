@@ -1,6 +1,8 @@
-﻿export const metadata = {
-  title: "JoinEcoGrow - Where Gaming Meets Sustainability",
-  description: "Revolutionary platform with 925+ features"
+﻿import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'JoinEcoGrow - Where Gaming Meets Sustainability',
+  description: 'Revolutionary platform with 925+ features for sustainable gaming',
 }
 
 export default function RootLayout({
@@ -10,7 +12,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body style={{margin: 0, padding: 0}}>
+        {children}
+      </body>
     </html>
   )
 }
