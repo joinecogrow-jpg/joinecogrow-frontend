@@ -3,54 +3,53 @@
     <main style={{
       minHeight: "100vh",
       background: "linear-gradient(to bottom, #f1f8e9, #e8f5e9)",
-      padding: "2rem",
-      fontFamily: "system-ui, -apple-system, sans-serif"
+      padding: "2rem"
     }}>
-      {/* JoinEcoGrow Logo Section */}
+      {/* Recreate your exact logo */}
       <div style={{display: "flex", justifyContent: "center", marginTop: "3rem"}}>
-        <div style={{position: "relative"}}>
-          <svg width="250" height="250" viewBox="0 0 250 250">
-            {/* Circular border */}
-            <circle cx="125" cy="125" r="120" stroke="#9CCC65" strokeWidth="4" fill="white"/>
-            
-            {/* Nurturing hand emoji */}
-            <text x="70" y="140" fontSize="60" fill="#388E3C">🤚</text>
-            
-            {/* Growing plant emoji */}
-            <text x="110" y="120" fontSize="50" fill="#7CB342">🌱</text>
-            
-            {/* Earth globe emoji */}
-            <text x="90" y="180" fontSize="40">🌍</text>
-          </svg>
-          
-          {/* Water droplet */}
-          <div style={{position: "absolute", bottom: "60px", right: "60px"}}>
-            <span style={{fontSize: "30px", color: "#29B6F6"}}>💧</span>
-          </div>
+        <div style={{position: "relative", textAlign: "center"}}>
+          <img 
+            src="/logo.png" 
+            alt="JoinEcoGrow" 
+            style={{width: "250px", height: "250px"}}
+          />
         </div>
       </div>
       
-      {/* Title */}
       <h1 style={{
         textAlign: "center",
-        fontSize: "3rem",
+        fontSize: "3.5rem",
         marginTop: "2rem",
-        color: "#388E3C"
+        fontWeight: "bold"
       }}>
-        Join<span style={{color: "#388E3C"}}>Eco</span>
-        <span style={{color: "#7CB342"}}>Grow</span>
+        <span style={{color: "#388E3C"}}>Join</span>
+        <span style={{color: "#388E3C"}}>Eco</span>
+        <span style={{color: "#7CB342"}}>Gr</span>
+        <span style={{color: "#7CB342", position: "relative"}}>
+          o
+          <span style={{
+            position: "absolute",
+            top: "-8px",
+            right: "-12px",
+            fontSize: "1rem",
+            color: "#29B6F6"
+          }}>
+            💧
+          </span>
+        </span>
+        <span style={{color: "#7CB342"}}>w</span>
       </h1>
       
       <p style={{
         textAlign: "center",
-        fontSize: "1.25rem",
+        fontSize: "1.5rem",
         color: "#689F38",
         marginTop: "1rem"
       }}>
         Where Gaming Meets Sustainability
       </p>
       
-      {/* Navigation Links */}
+      {/* Navigation Buttons */}
       <div style={{
         display: "flex",
         justifyContent: "center",
@@ -58,43 +57,45 @@
         marginTop: "3rem",
         flexWrap: "wrap"
       }}>
-        <a href="/dashboard" style={{
+        <a href="/features" style={{
           padding: "1rem 2rem",
           background: "#388E3C",
           color: "white",
           borderRadius: "8px",
-          textDecoration: "none"
-        }}>Dashboard</a>
-        
-        <a href="/features" style={{
+          textDecoration: "none",
+          fontSize: "1.1rem"
+        }}>
+          See Features
+        </a>
+        <a href="/dashboard" style={{
           padding: "1rem 2rem",
           background: "#7CB342",
           color: "white",
           borderRadius: "8px",
-          textDecoration: "none"
-        }}>Features</a>
-        
+          textDecoration: "none",
+          fontSize: "1.1rem"
+        }}>
+          Dashboard
+        </a>
         <a href="/games" style={{
           padding: "1rem 2rem",
           background: "#29B6F6",
           color: "white",
           borderRadius: "8px",
-          textDecoration: "none"
-        }}>Games</a>
-        
-        <a href="/community" style={{
-          padding: "1rem 2rem",
-          background: "#689F38",
-          color: "white",
-          borderRadius: "8px",
-          textDecoration: "none"
-        }}>Community</a>
+          textDecoration: "none",
+          fontSize: "1.1rem"
+        }}>
+          Play Games
+        </a>
       </div>
       
-      {/* Status */}
-      <div style={{textAlign: "center", marginTop: "3rem"}}>
+      {/* Status Section */}
+      <div style={{textAlign: "center", marginTop: "5rem"}}>
         <p style={{color: "#388E3C", fontSize: "1.2rem"}}>
-          ✅ 925+ Features Ready
+          ✅ Platform Live - 925+ Features Ready
+        </p>
+        <p style={{color: "#689F38", marginTop: "0.5rem"}}>
+          🌱 Join the sustainable gaming revolution
         </p>
       </div>
     </main>
