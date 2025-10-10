@@ -1,21 +1,14 @@
-﻿/** @type {import("next").NextConfig} */
+﻿/** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'standalone',
   reactStrictMode: true,
-  experimental: {
-    appDir: true
+  swcMinify: true,
+  images: {
+    unoptimized: true
   },
-  async headers() {
-    return [
-      {
-        source: "/:path*",
-        headers: [
-          {
-            key: "X-Frame-Options",
-            value: "DENY"
-          }
-        ]
-      }
-    ]
+  experimental: {
+    appDir: true,
+    typedRoutes: true,
   }
 }
 
