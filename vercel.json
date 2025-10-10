@@ -1,11 +1,10 @@
 ﻿{
-  "buildCommand": "npm run build",
-  "outputDirectory": ".next",
-  "framework": "nextjs",
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/"
-    }
+  "routes": [
+    { "src": "/dashboard", "dest": "/dashboard" },
+    { "src": "/features", "dest": "/features" },
+    { "src": "/games", "dest": "/games" },
+    { "src": "/community", "dest": "/community" },
+    { "src": "/sports", "dest": "/sports" },
+    { "src": "/admin", "dest": "/admin" }
   ]
 }
