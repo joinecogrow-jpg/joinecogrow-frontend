@@ -1,0 +1,7 @@
+{
+  "ai.model": "gpt-4",
+  "ai.temperature": 0.7,
+  "v0.integration": true,
+  "v0.autoSync": true,
+  "supabase.projectRef": "qswlylqdtzzoolmtbzn"
+}

@@ -1,3 +1,5 @@
+import SupabaseTest from '@/components/SupabaseTest';
+
 export default function Home() {
 
   return (
@@ -137,6 +139,11 @@ export default function Home() {
                 </a>
               </p>
             </div>
+          </div>
+
+          {/* Supabase Connection Test */}
+          <div className="mt-8">
+            <SupabaseTest />
           </div>
 
         </div>

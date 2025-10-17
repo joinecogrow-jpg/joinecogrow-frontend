@@ -1,0 +1,96 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Sync from V0",
+      "type": "shell",
+      "command": "git pull origin main && npm install",
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Push to V0",
+      "type": "shell",
+      "command": "git add . && git commit -m 'Update from Cursor' && git push origin main",
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Generate V0 Component",
+      "type": "shell",
+      "command": "npx v0 generate ${input:componentName}",
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Integration Tests",
+      "type": "shell",
+      "command": "npm run test:integration",
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Execute Master Workflow",
+      "type": "shell",
+      "command": "curl -X POST http://localhost:3000/api/orchestrator/execute -H 'Content-Type: application/json' -d '{\"prompt\": \"${input:workflowPrompt}\"}'",
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Start Development Server",
+      "type": "shell",
+      "command": "npm run dev",
+      "group": "build",
+      "isBackground": true,
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "componentName",
+      "type": "promptString",
+      "description": "Component name to generate"
+    },
+    {
+      "id": "workflowPrompt",
+      "type": "promptString",
+      "description": "Prompt for master workflow execution"
+    }
+  ]
+}

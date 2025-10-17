@@ -1,0 +1,6 @@
+{
+  "projectId": "joinecogrow-frontend",
+  "framework": "nextjs",
+  "autoSync": true,
+  "branch": "main"
+}
