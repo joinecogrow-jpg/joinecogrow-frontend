@@ -4,7 +4,7 @@
 export interface ComponentMetadata {
   name: string;
   fileName: string;
-  propsInterface?: string;
+  propsInterface?: string | null;
   description: string;
   filePath: string;
   createdAt: string;
