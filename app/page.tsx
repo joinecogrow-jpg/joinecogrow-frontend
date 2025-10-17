@@ -1,4 +1,5 @@
 import SupabaseTest from '@/components/SupabaseTest';
+import V0CursorIntegration from '@/components/V0CursorIntegration';
 
 export default function Home() {
 
@@ -141,10 +142,15 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Supabase Connection Test */}
-          <div className="mt-8">
-            <SupabaseTest />
-          </div>
+            {/* V0-Cursor Integration */}
+            <div className="mt-8">
+              <V0CursorIntegration />
+            </div>
+
+            {/* Supabase Connection Test */}
+            <div className="mt-8">
+              <SupabaseTest />
+            </div>
 
         </div>
       </div>
