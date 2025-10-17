@@ -33,7 +33,7 @@ function checkDNS() {
     console.log('  - ns1.vercel-dns.com');
     console.log('  - ns2.vercel-dns.com');
     console.log('\nA Records should be:');
-    console.log('  - 76.76.19.61 (Vercel IP)');
+    console.log('  - 76.76.21.21 (Vercel IP)');
     console.log('\nIf you see different results, DNS changes are still propagating.');
   }, 1000);
 }
