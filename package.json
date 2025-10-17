@@ -20,7 +20,12 @@
     "v0:sync": "node scripts/v0-cursor-sync.js",
     "v0:generate": "node scripts/v0-cursor-sync.js generate",
     "v0:start": "npm run v0:sync & npm run dev",
-    "check-dns": "node scripts/check-dns.js"
+    "check-dns": "node scripts/check-dns.js",
+    "sync:v0": "node scripts/sync-v0.js",
+    "sync:v0:watch": "node scripts/sync-v0.js watch",
+    "sync:v0:cleanup": "node scripts/sync-v0.js cleanup",
+    "sync:v0:registry": "node scripts/sync-v0.js registry",
+    "sync:v0:types": "node scripts/sync-v0.js types"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",

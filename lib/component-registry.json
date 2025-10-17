@@ -1,0 +1,38 @@
+{
+  "ShadcnDemo": {
+    "name": "ShadcnDemo",
+    "fileName": "ShadcnDemo.tsx",
+    "propsInterface": null,
+    "description": "components/ShadcnDemo.tsx",
+    "filePath": "components",
+    "createdAt": "2025-10-17T23:14:29.927Z",
+    "lastModified": "2025-10-17T23:14:29.927Z"
+  },
+  "V0CursorIntegration": {
+    "name": "V0CursorIntegration",
+    "fileName": "V0CursorIntegration.tsx",
+    "propsInterface": null,
+    "description": "components/V0CursorIntegration.tsx",
+    "filePath": "components",
+    "createdAt": "2025-10-17T23:14:29.927Z",
+    "lastModified": "2025-10-17T23:14:29.927Z"
+  },
+  "FeaturesList": {
+    "name": "FeaturesList",
+    "fileName": "FeaturesList.tsx",
+    "propsInterface": null,
+    "description": "components/FeaturesList.tsx",
+    "filePath": "components",
+    "createdAt": "2025-10-17T23:14:29.927Z",
+    "lastModified": "2025-10-17T23:14:29.927Z"
+  },
+  "SupabaseTest": {
+    "name": "SupabaseTest",
+    "fileName": "SupabaseTest.tsx",
+    "propsInterface": null,
+    "description": "components/SupabaseTest.tsx",
+    "filePath": "components",
+    "createdAt": "2025-10-17T23:14:29.927Z",
+    "lastModified": "2025-10-17T23:14:29.927Z"
+  }
+}
