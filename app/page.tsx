@@ -1,5 +1,6 @@
 import SupabaseTest from '@/components/SupabaseTest';
 import V0CursorIntegration from '@/components/V0CursorIntegration';
+import ShadcnDemo from '@/components/ShadcnDemo';
 
 export default function Home() {
 
@@ -141,6 +142,11 @@ export default function Home() {
               </p>
             </div>
           </div>
+
+            {/* shadcn/ui Demo */}
+            <div className="mt-8">
+              <ShadcnDemo />
+            </div>
 
             {/* V0-Cursor Integration */}
             <div className="mt-8">
