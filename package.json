@@ -25,7 +25,8 @@
     "sync:v0:watch": "node scripts/sync-v0.js watch",
     "sync:v0:cleanup": "node scripts/sync-v0.js cleanup",
     "sync:v0:registry": "node scripts/sync-v0.js registry",
-    "sync:v0:types": "node scripts/sync-v0.js types"
+    "sync:v0:types": "node scripts/sync-v0.js types",
+    "enhance:v0": "node scripts/enhance-v0-component.js"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
